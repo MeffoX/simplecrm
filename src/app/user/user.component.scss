@@ -3,3 +3,40 @@
     bottom: 56px;
     right: 56px;
 }
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        border-bottom: 1px solid #b1b1b1;
+        cursor: pointer;
+
+        &:first-child {
+            cursor: unset;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    th {
+        height: 40px;
+
+        &:first-child {
+            padding-left: 16px;
+        }
+    }
+}
+
+.table-data {
+    th {
+    font-weight: normal;
+    color: #b1b1b1;
+    }
+
+    &:hover {
+        background-color: rgba($color: #e1e1e1, $alpha: 0.25)
+    }
+}
