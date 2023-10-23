@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sipmle-crm": {
+      "hosting": {
+        "simple-crm": [
+          "sipmle-crm"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sipmle-crm"
+  }
+}
