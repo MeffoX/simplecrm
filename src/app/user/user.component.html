@@ -6,7 +6,7 @@
       <th>City</th>
     </tr>
 
-    <tr *ngFor="let user of allUsers" class="table-data">
+    <tr *ngFor="let user of allUsers" [routerLink]="['/user/' + user.customID]" class="table-data">
       <th>{{ user.firstName }} {{ user.lastName }}</th>
       <th>{{ user.email }}</th>
       <th>{{ user.city }}</th>

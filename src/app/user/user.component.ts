@@ -16,9 +16,10 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     const aCollection = collection(this.firestore, 'users');
-    collectionData(aCollection).subscribe(dataArray => {
+    collectionData(aCollection, { idField: 'customID' }).subscribe(dataArray => {
       // Assuming dataArray is an array of objects with User properties
       this.allUsers = dataArray as User[];
+      console.log('All Users:', this.allUsers);
     });
   }
 
